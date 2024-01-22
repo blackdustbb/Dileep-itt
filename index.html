@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InTimeTec</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        #logo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        #introText {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        #fileSection {
+            margin-top: 20px;
+        }
+
+        #file {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #redirectButton {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #constantText {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        #videoSection {
+            margin-top: 20px;
+        }
+
+        #videoPlayer {
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <img id="logo" src="Logo.png" alt="Company Logo">
+        <button id="redirectButton" href="/CIS-CAT Lite Assessor v4.37.0.zip" download>Download Audit Tool</button>
+        
+        <div id="videoSection">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D2WCCAKz7PY?si=7qX7EksDWOPZXs0K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+                     
+        <div id="fileSection">
+           
+           <button id="redirectButton" onclick="redirectToForm();">Go to Security Assessment Form To Upload Report</button>
+            
+        </div>
+
+       
+    </div>
+
+    <script>
+        // Redirect to the security assessment form
+        function redirectToForm() {
+            window.location.href = "https://forms.gle/P3x6qdozvEQUdVCv8";
+        }
+    </script>
+
+</body>
+
+</html>
